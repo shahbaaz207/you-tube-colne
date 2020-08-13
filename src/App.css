@@ -1,0 +1,319 @@
+ /* Header */
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header_left{
+  flex: .2;
+}
+
+.header_logo{
+  height: 25px;
+  object-fit: contain;
+  margin-left: 10px;
+}
+
+.header_center{
+  width: 40%;
+  display: flex;
+  flex: .6;
+  align-items: center;
+  border: 1px solid rgb(31, 30, 30);
+}
+
+.header_center>input{
+  flex: 1;
+  height: 30px;
+  border: none;
+}
+
+.header_button{
+  width: 70px !important;
+  height:  33px !important;
+  background-color:lightgray;
+  border: none !important;
+}
+
+.header_right{
+  display: flex;
+  align-items: center;
+  flex: .2;
+  justify-content: flex-end;
+}
+
+.header_icon{
+  margin-right: 8px;
+}
+
+/* sidebar & Reco video */
+
+.app_page{
+  display: flex;
+}
+
+.sidebar{
+  flex: .2;
+}
+
+.sidebarRow{
+  display: flex;
+  align-items: center;
+  padding:10px 20px;
+  transition: .5s  background-color,color ,font-weight ease-in-out;
+}
+
+.sidebar_icon{
+  color: #606060;
+  font-size: large !important;
+}
+
+.sidebar_title{
+  flex: 1;
+  margin-left: 15px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.sidebarRow:hover{
+  background-color: rgb(160, 153, 153);
+  cursor: pointer;
+}
+
+.sidebarRow:hover>.sidebar_icon{
+  color: #ff0000;
+}
+
+.sidebarRow:hover>.sidebar_title{
+  font-weight: 600;
+}
+.selected{
+  background-color: lightgray;
+}
+
+.selected>.sidebar_icon{
+  color: #ff0000;
+}
+
+.selected>.sidebar_title{
+  font-weight: 600;
+}
+
+.sidebar_title>hr{
+  height: 1px;
+  border: none;
+  background-color: lightgray;
+  margin: 10px 0;
+
+}
+
+.recommended{
+  flex: .8;
+  background-color: #f9f9f9;
+  width: 100%;
+  padding:  20px;
+  padding-bottom: 0;
+}
+
+.recommended>h2{
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+
+/* Video */
+.recommended_video{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.video{
+  width: 260px;
+  margin-bottom: 40px;
+}
+
+.video_thumbnail{
+  height: 140px;
+  width: 250px;
+}
+
+.video_info{
+  display: flex;
+  align-items: flex-start;
+  padding: 5px;
+  margin-right: 30px;
+
+}
+
+.video_text{
+  margin-left: 8px;
+}
+
+.video_text>h4{
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.video_text>p{
+  font-size: 14px;
+  color: gray;
+}
+
+.video_avatar{
+  height: 30px !important;
+  width: 30px !important;
+}
+
+/* serachPage */
+.searchPage_filter{
+  display: flex;
+  color: #606060;
+  margin-top: 3px;
+  font-size: xx-small !important;
+  align-items: center;
+}
+
+.searchPage_filter>h3{
+  margin-left: 10px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.searchPage_filter>hr{
+  width: 100px;
+}
+
+/* channelRow  */
+
+.channelRow{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.channelRow_info>h4{
+  font-size: large !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.channel_logo{
+  height: 120px!important;
+  width: 120px !important;
+  margin: 10px 60px;
+}
+
+.channelRow_info{
+  margin-left: 10px;
+  color: #606060;
+}
+
+/* videoRow */
+.videoRow{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  padding-left: 10px;
+  max-width: 700px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.videoRow_logo{
+  width: 246px;
+  object-fit: contain;
+  height: 138px;
+}
+
+.videoRow_text{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  opacity: .7;
+  margin-left: 10px;
+}
+
+.videoRow_description{
+  margin-top: 10px;
+  color: #606060;
+  font-size: 12px;
+}
+
+.subs{
+  background-color: lightgray;
+  padding: 2px;
+}
+
+
+.scrool{
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+.scrool>p{
+  background-color: #444;
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  
+}
+@media(max-width:760px){
+  .header_left{
+    flex: .4;
+  }
+  
+  .header_logo{
+    height: 25px;
+    object-fit: contain;
+    margin-left: 10px;
+  }
+ 
+  .header_center{
+    width: 100%;
+    display: flex;
+    flex: .4;
+    align-items: center;
+    border: 1px solid rgb(31, 30, 30);
+  }
+ 
+  .header_center>input{
+    flex: 1;
+    height: 30px;
+    border: none;
+  }
+  
+  .header_button{
+    width: 30px !important;
+    height:  34px !important;
+    margin-right: 0px;
+    background-color:lightgray;
+  }
+  
+  .header_right{
+    display: flex;
+    align-items: center;
+    flex: .2;
+    justify-content: flex-end;
+  }
+
+  .header_right .hide{
+    display: none;
+  }
+  
+  .scrool{
+    display: none;
+  }
+}
